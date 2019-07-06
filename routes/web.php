@@ -38,3 +38,11 @@ Route::get('ola/user/{nome}/{sobrenome}', function($nome, $sobrenome){
 Route::get('ola/compact/{nome}/{sobrenome}', function ($nome, $sobrenome){
     return view('minhaview', compact('nome', 'sobrenome'));
 });
+
+//verificando se uma view existe SE NAO EXISTIR REDIRECIONA PARA A VIEW ERRO QUE CRIEI
+Route::get('/email/{email}', function ($email){
+    if ( View::exists( 'email') )
+        return view('email', compact('email'));
+    else
+        return view('erro');
+});
