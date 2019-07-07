@@ -51,3 +51,5 @@ Route::get('/email/{email}', function ($email){
 Route::get('/paginacombootstrap', function (){
     return view('/pagina');
 });
+
+Route::get('/produtos', 'ProdutoControlador@listar');
