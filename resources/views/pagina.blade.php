@@ -13,9 +13,17 @@
     <!-- LA DENTRO DO MEU COMPONENTE EU CHAMO  -->
     <!-- E TUDO QUE VC COLOCA DENTRO DO COMPONENTE NA PAGINA VAI PARA SEU COMPONENTE -->
     <!-- ATRAVES DA VARIAVEL SLOT -->
-    @component('components.meucomponente', ['tipo'=>'danger', 'titulo'=>'Deu erro'])
-        <strong>Erro: </strong> Sua mensagem de erro.
-    @endcomponent
+    @alerta( ['tipo'=>'danger', 'titulo'=>'Raid Encerrada'])
+    @endalerta
+
+    @alerta( ['tipo'=>'warning', 'titulo'=>'Falta pouco para terminar'])
+    @endalerta
+
+    @alerta( ['tipo'=>'primary', 'titulo'=>'Raid aberta'])
+    @endalerta
+
+    @alerta( ['tipo'=>'dark', 'titulo'=>'Raid cancelada'])
+    @endalerta
 
     </body>
 
