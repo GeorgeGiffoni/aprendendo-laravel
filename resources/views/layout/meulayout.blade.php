@@ -11,7 +11,7 @@
     @hasSection('minha_secao_produtos')
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title" style="width: 500px; margin:10px">Produtos</h5>
+            <h5 class="card-title" style="width: 500px; margin:10px">Meu Card de Produtos</h5>
                 <p class="card-text">
                     @yield('minha_secao_produtos')
                 </p>
