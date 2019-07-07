@@ -46,3 +46,8 @@ Route::get('/email/{email}', function ($email){
     else
         return view('erro');
 });
+
+//rota para minha pagina que contem o bootstrap
+Route::get('/paginacombootstrap', function (){
+    return view('/pagina');
+});
