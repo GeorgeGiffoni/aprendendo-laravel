@@ -55,3 +55,7 @@ Route::get('/paginacombootstrap', function (){
 Route::get('/produtos', 'ProdutoControlador@listar');
 
 Route::get('/secaoprodutos/{palavra}', 'ProdutoControlador@secaoprodutos');
+
+Route::get('/mostrar_opcoes', 'ProdutoControlador@mostraropcoes');
+
+Route::get('/opcoes/{opcao}', 'ProdutoControlador@opcoes');
